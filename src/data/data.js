@@ -27,8 +27,8 @@ const data = {
     },
     json2: {
         psu1: {
-            "status": "no",
-            "volt": "Power Supply AC Lost"
+            status: "no",
+            volt: "Power Supply AC Lost"
         },
         psu2: {
             status: "ok",
@@ -77,6 +77,6 @@ const data = {
             bps: 4055645
         }
     }
- }
+};
 
 export default data;
