@@ -82,32 +82,32 @@ class Server extends React.Component {
                         <div
                         className={`status-box mgmt1 ${
                             this.state.randomJSON[0].mgmt1.link_status === "no link"
-                            ? "gray"
-                            : "green"
+                                ? "gray"
+                                : "green"
                         }`}
                         />
 
                         <div
                         className={`status-box mgmt2 ${
                             this.state.randomJSON[0].mgmt2.link_status === "no link"
-                            ? "gray"
-                            : "green"
+                                ? "gray"
+                                : "green"
                         }`}
                         />
 
                         <div
                         className={`status-box data1 ${
                             this.state.randomJSON[0].data1.link_status === "no link"
-                            ? "gray"
-                            : "green"
+                                ? "gray"
+                                : "green"
                         }`}
                         />
 
                         <div
                         className={`status-box data2 ${
                             this.state.randomJSON[0].data2.link_status === "no link"
-                            ? "gray"
-                            : "green"
+                                ? "gray"
+                                : "green"
                         }`}
                         />
                     </div>
@@ -117,8 +117,8 @@ class Server extends React.Component {
                         <p>Status: {this.state.randomJSON[0].psu1.status}</p>
                         <p>
                             {this.state.randomJSON[0].psu1.status === "ok"
-                            ? this.state.randomJSON[0].psu1.volt + "V"
-                            : "Power Supply AC lost"}
+                                ? this.state.randomJSON[0].psu1.volt + "V"
+                                : "Power Supply AC lost"}
                         </p>
                         </div>
                         <div>
@@ -126,8 +126,8 @@ class Server extends React.Component {
                         <p>Status: {this.state.randomJSON[0].psu2.status}</p>
                         <p>
                             {this.state.randomJSON[0].psu2.status === "ok"
-                            ? this.state.randomJSON[0].psu2.volt + "V"
-                            : "Power Supply AC lost"}
+                                ? this.state.randomJSON[0].psu2.volt + "V"
+                                : "Power Supply AC lost"}
                         </p>
                         </div>
                         <div className="mgmt">
