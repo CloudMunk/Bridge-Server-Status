@@ -54,68 +54,62 @@ class Server extends React.Component {
                         src={require("../../assets/440_frontpanel.png")}
                         alt="server front panel"
                         />
+
                         <div
                         className={`status-blink psu1 ${
                             this.state.randomJSON[0].psu1.status === "ok" ? "green" : "red"
                         }`}
-                        >
+                        />
 
-                        </div>
                         <div
                         className={`status-blink psu2 ${
                             this.state.randomJSON[0].psu2.status === "ok" ? "green" : "red"
                         }`}
-                        ></div>
+                        />
+
                         <div
                         className={`status-box psu1 ${
                             this.state.randomJSON[0].psu1.status === "ok" ? "green" : "red"
                         }`}
-                        >
+                        />
 
-                        </div>
                         <div
                         className={`status-box psu2 ${
                             this.state.randomJSON[0].psu2.status === "ok" ? "green" : "red"
                         }`}
-                        >
+                        />
 
-                        </div>
                         <div
                         className={`status-box mgmt1 ${
                             this.state.randomJSON[0].mgmt1.link_status === "no link"
                             ? "gray"
                             : "green"
                         }`}
-                        >
-                        
-                        </div>
+                        />
+
                         <div
                         className={`status-box mgmt2 ${
                             this.state.randomJSON[0].mgmt2.link_status === "no link"
                             ? "gray"
                             : "green"
                         }`}
-                        >
-                        
-                        </div>
+                        />
+
                         <div
                         className={`status-box data1 ${
                             this.state.randomJSON[0].data1.link_status === "no link"
                             ? "gray"
                             : "green"
                         }`}
-                        >
-                        
-                        </div>
+                        />
+
                         <div
                         className={`status-box data2 ${
                             this.state.randomJSON[0].data2.link_status === "no link"
                             ? "gray"
                             : "green"
                         }`}
-                        >
-                        
-                        </div>
+                        />
                     </div>
                     <div className="grid">
                         <div>
