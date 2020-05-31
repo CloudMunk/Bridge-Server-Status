@@ -1,0 +1,16 @@
+.header {
+    min-height: 100px;    
+    background: black;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo {
+    max-height: 50px;
+}
+.title {
+    color: white;
+    margin-left: 15px;
+}

@@ -1,0 +1,213 @@
+.server {
+    width: 100%;
+    background-color: black;
+    
+}
+
+.frontpanel-container {
+    position: relative;
+}
+
+.status-box {
+    position: absolute;
+    bottom: -20px;
+    width: 10px;
+    height: 10px;
+    color: #38ef7d;
+    &::after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: max-content;
+        font-size: 10px;
+    }
+    &.psu1 {
+        left: 2%;
+        &.red {
+            &::after {
+                content: "Power Supply AC lost";
+                right: -100px;
+            }
+        }
+        &.green {
+            &::after {
+                content: "OK";
+                right: -20px;
+            }
+        }
+    }
+    &.psu2 {
+        left: 17%;
+        &.red {
+            &::after {
+                content: "Power Supply AC lost";
+                right: -100px;
+            }
+        }
+        &.green {
+            &::after {
+                content: "OK";
+                right: -20px;
+            }
+        }
+    }
+    &.mgmt1 {
+        left: 45%;
+        &::after {
+            content: "MGMT 1";
+            right: -45px;
+        }
+    }
+    &.mgmt2 {
+        left: 50%;
+        &::after {
+            content: "MGMT 2";
+            right: -45px;
+        }
+    }
+    &.data1 {
+        left: 75%;
+        &::after {
+            content: "Secondary";
+            right: -55px;
+        }
+    }
+    &.data2 {
+        left: 80%;
+        &::after {
+            content: "p6p1";
+            right: -30px;
+        }
+    }
+    &.red {
+        background-color: red;
+        border: 2px solid crimson;
+    }
+    &.green {
+        background-color: rgb(1, 150, 1);
+        border: 2px solid green;
+    }
+    &.gray {
+        background-color: gray;
+        border: 2px solid rgb(116, 116, 116);
+    }
+}
+
+.status-blink {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    &.psu1 {
+        top: 77.4%;
+        left: 7.465%;
+    }
+    &.psu2 {
+        top: 77.4%;
+        left: 20.35%;
+    }
+    &.red {
+        background-color: red;
+        animation: pulseRed 2s infinite;
+    }
+    &.green {
+        background-color: green;
+        animation: pulseGreen 2s infinite;
+    }
+}
+
+.frontpanel {
+    width: 100%;
+    min-height: 100px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 13% 13% auto auto;
+    background-color: #030303;
+    grid-gap: 10px;
+    height: 200px;
+    margin-top: 50px;
+    p {
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 24px;
+    }
+}
+.data {
+    display: flex;
+    justify-content: center;
+    div {
+        margin: 0 10px;
+    }
+}
+
+.grid > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.get-random-json-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: lightseagreen;
+    color: white;
+    margin: 20px auto;
+    border-radius: 5%;
+
+    &:hover {
+        cursor: pointer;
+        background-color: yellow;
+        color: black;
+        border: 1px black solid;
+    }
+}
+.button-text {
+    font-size: 18px;
+}
+
+.mgmt,
+.data {
+    table {
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+@keyframes pulseRed {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes pulseGreen {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
