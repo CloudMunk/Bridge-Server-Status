@@ -113,71 +113,71 @@ class Server extends React.Component {
                     </div>
                     <div className="grid">
                         <div>
-                        <p>PSU 1</p>
-                        <p>Status: {this.state.randomJSON[0].psu1.status}</p>
-                        <p>
-                            {this.state.randomJSON[0].psu1.status === "ok"
-                                ? this.state.randomJSON[0].psu1.volt + "V"
-                                : "Power Supply AC lost"}
-                        </p>
+                            <p>PSU 1</p>
+                            <p>Status: {this.state.randomJSON[0].psu1.status}</p>
+                            <p>
+                                {this.state.randomJSON[0].psu1.status === "ok"
+                                    ? this.state.randomJSON[0].psu1.volt + "V"
+                                    : "Power Supply AC lost"}
+                            </p>
                         </div>
                         <div>
-                        <p>PSU 2</p>
-                        <p>Status: {this.state.randomJSON[0].psu2.status}</p>
-                        <p>
-                            {this.state.randomJSON[0].psu2.status === "ok"
-                                ? this.state.randomJSON[0].psu2.volt + "V"
-                                : "Power Supply AC lost"}
-                        </p>
+                            <p>PSU 2</p>
+                            <p>Status: {this.state.randomJSON[0].psu2.status}</p>
+                            <p>
+                                {this.state.randomJSON[0].psu2.status === "ok"
+                                    ? this.state.randomJSON[0].psu2.volt + "V"
+                                    : "Power Supply AC lost"}
+                            </p>
                         </div>
                         <div className="mgmt">
-                        <table>
-                            <thead>
-                            <tr>
-                                <td>MGMT</td>
-                                <td>Status</td>
-                                <td>BPS</td>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>{this.state.randomJSON[0].mgmt1.link_status}</td>
-                                <td>{this.state.randomJSON[0].mgmt1.bps}</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>{this.state.randomJSON[0].mgmt2.link_status}</td>
-                                <td>{this.state.randomJSON[0].mgmt2.bps}</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>MGMT</td>
+                                        <td>Status</td>
+                                        <td>BPS</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>{this.state.randomJSON[0].mgmt1.link_status}</td>
+                                        <td>{this.state.randomJSON[0].mgmt1.bps}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>{this.state.randomJSON[0].mgmt2.link_status}</td>
+                                        <td>{this.state.randomJSON[0].mgmt2.bps}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <div className="data">
-                        <table>
-                            <thead>
-                            <tr>
-                                <td>Data</td>
-                                <td>Status</td>
-                                <td>BPS</td>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>{this.state.randomJSON[0].data1.link_status}</td>
-                                <td>{this.state.randomJSON[0].data1.bps}</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>{this.state.randomJSON[0].data2.link_status}</td>
-                                <td>{this.state.randomJSON[0].data2.bps}</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Data</td>
+                                        <td>Status</td>
+                                        <td>BPS</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>{this.state.randomJSON[0].data1.link_status}</td>
+                                        <td>{this.state.randomJSON[0].data1.bps}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>{this.state.randomJSON[0].data2.link_status}</td>
+                                        <td>{this.state.randomJSON[0].data2.bps}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    </div>
+                </div>
                     <div className="get-random-json-button" onClick={() => this.setJSON()}>
                     Get Random JSON
                     </div>
