@@ -3,9 +3,9 @@ import React from 'react';
 import './app.scss';
 
 // Pages
-import HomePage from './pages/homepage/homepage.component';
+import HomePage from './pages/homepage/homepage.component.jsx';
 // Components
-import Header from './components/header/header.component';
+import Header from './components/header/header.component.jsx';
 
 
 const _ = cockpit.gettext;
