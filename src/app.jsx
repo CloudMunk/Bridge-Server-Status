@@ -7,7 +7,6 @@ import HomePage from './pages/homepage/homepage.component.jsx';
 // Components
 import Header from './components/header/header.component.jsx';
 
-
 const _ = cockpit.gettext;
 
 export class Application extends React.Component {

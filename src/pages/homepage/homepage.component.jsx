@@ -1,16 +1,15 @@
 import React from 'react';
 
-
 // Components
-import Server from '../../components/server/server.component';
+import Server from '../../components/server/server.component.jsx';
 
-//Styles
-import './homepage.styles.scss'
+//  Styles
+import './homepage.styles.scss';
 
 const HomePage = () => (
     <div className="homepage">
-       <Server />
+        <Server />
     </div>
-)
+);
 
 export default HomePage;
