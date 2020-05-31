@@ -51,7 +51,7 @@ class Server extends React.Component {
                     <div className="frontpanel-container">
                         <img
                         className="frontpanel"
-                        src="https://imgur.com/PSuND5E"
+                        src={require("../../assets/440_frontpanel.png")}
                         alt="server front panel"
                         />
 
