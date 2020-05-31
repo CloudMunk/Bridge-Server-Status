@@ -21,7 +21,7 @@ export class Application extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="App">
                 <Header />
                 <HomePage />
             </div>
