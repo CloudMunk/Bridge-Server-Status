@@ -178,14 +178,12 @@ class Server extends React.Component {
                         </div>
                     </div>
                 </div>
-                    <div className="get-random-json-button" onClick={() => this.setJSON()}>
+                <div className="get-random-json-button" onClick={() => this.setJSON()}>
                     Get Random JSON
-                    </div>
+                </div>
             </div>
         );
     }
 }
 
-
 export default Server;
-
