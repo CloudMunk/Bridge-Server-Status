@@ -2,7 +2,7 @@ import React from "react";
 
 // Data
 // import data from "../../data/data";
-import data from '/usr/local/bin/statusdemo';
+import data from '../../../local/bin/statusdemo';
 
 // Styles
 import "./server.styles.scss";
@@ -14,7 +14,7 @@ class Server extends React.Component {
         // const { json1, json2, json3 } = data;
 
         this.state = {
-            randomJSON: data,
+            randomJSON: {},
             // json: [json1, json2, json3],
         };
     }
