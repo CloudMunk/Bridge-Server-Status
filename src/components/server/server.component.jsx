@@ -2,7 +2,7 @@ import React from "react";
 
 // Data
 // import data from "../../data/data";
-import data from '../../../local/bin/statusdemo';
+import data from '@usr/local/bin/statusdemo';
 
 // Styles
 import "./server.styles.scss";
