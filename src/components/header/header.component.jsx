@@ -4,7 +4,7 @@ import './header.styles.scss';
 
 const Header = () => (
     <div className="header">
-        <img className="logo" alt="logo" />
+        <img className="logo" src='../../assets/bridgeLogo.jpg' alt="logo" />
         <h1 className="title">Bridge Technologies Test</h1>
     </div>
 );
