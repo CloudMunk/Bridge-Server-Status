@@ -1,8 +1,7 @@
 import React from "react";
 
 // Data
-// import data from "../../data/data";
-import data from '@usr/local/bin/statusdemo';
+import data from "../../data/data";
 
 // Styles
 import "./server.styles.scss";
@@ -11,32 +10,32 @@ class Server extends React.Component {
     constructor(props) {
         super(props);
 
-        // const { json1, json2, json3 } = data;
+        const { json1, json2, json3 } = data;
 
         this.state = {
             randomJSON: {},
-            // json: [json1, json2, json3],
+            json: [json1, json2, json3],
         };
     }
 
     // Methods
-    // getARandom() {
-    //     const state = this.state;
-    //     return (
-    //         state.json[Math.floor(Math.random() * state.json.length)] &&
-    //         console.log(state.randomJSON)
-    //     );
-    // }
+    getARandom() {
+        const state = this.state;
+        return (
+            state.json[Math.floor(Math.random() * state.json.length)] &&
+            console.log(state.randomJSON)
+        );
+    }
 
-    // randomJSON() {
-    //     const state = this.state;
-    //     return state.json[Math.floor(Math.random() * state.json.length)];
-    // }
+    randomJSON() {
+        const state = this.state;
+        return state.json[Math.floor(Math.random() * state.json.length)];
+    }
 
     setJSON() {
         const state = this.state;
         this.setState({
-            randomJSON: data,
+            randomJSON: [this.randomJSON()],
         });
         console.log(state.randomJSON);
     }
