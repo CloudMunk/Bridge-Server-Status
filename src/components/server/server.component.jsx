@@ -50,8 +50,8 @@ class Server extends React.Component {
                 <div className="server-panel">
                     <div className="frontpanel-container">
                         <img
-                        className="frontpanel"
-                        src="../../assets/440_frontpanel.svg"
+                        className="frontpanel --pf-c-background-image--BackgroundImage"
+                        // src="../../assets/440_frontpanel.svg"
                         alt="server front panel"
                         />
 
